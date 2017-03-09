@@ -1,49 +1,45 @@
 <h1><a href="http://amazeui.org/" title="Amaze UI 官网"><img style="float: left" width="240" src="https://raw.githubusercontent.com/allmobilize/amazeui/master/vendor/amazeui/amazeui-b.png" alt="Amaze UI Logo"/></a></h1>
+- [Homepage in English](http://translate.google.com/translate?hl=en&sl=zh-CN&u=http://amazeui.org/&prev=search) translated by Google
+- [Homepage in English](http://www.microsofttranslator.com/bv.aspx?from=zh-CHS&to=en&a=http%3A%2F%2Famazeui.org%2F) translated by Bing
 
-[![Bower version](https://img.shields.io/bower/v/amazeui.svg?style=flat-square)](https://github.com/amazeui/amazeui)
-[![NPM version](https://img.shields.io/npm/v/amazeui.svg?style=flat-square)](https://www.npmjs.com/package/amazeui)
-[![Build Status](https://img.shields.io/travis/amazeui/amazeui.svg?style=flat-square)](https://travis-ci.org/amazeui/amazeui)
-[![Dependency Status](https://img.shields.io/david/amazeui/amazeui.svg?style=flat-square)](https://david-dm.org/amazeui/amazeui)
-[![devDependency Status](https://img.shields.io/david/dev/amazeui/amazeui.svg?style=flat-square)](https://david-dm.org/amazeui/amazeui#info=devDependencies)
-
-Amaze UI 是基于社区开源项目构建的一个跨屏前端框架。
+Amaze UI is an open-sourced responsive front-end framework.
 
 ### [Docs in English](http://amazeui.github.io/docs/en/)
 
-__[README in English](README.en.md)__
+## The Product
 
-### [React 版](https://github.com/amazeui/amazeui-react) | [独立插件](https://github.com/amazeui) | [Amaze UI Touch](https://github.com/amazeui/amazeui-touch)
+### Mobile First
 
-## 功能简介
-
-### 移动优先
-
-以移动优先（Mobile first）为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。
-
-### 组件丰富，模块化
-
-Amaze UI 含近 20 个 CSS 组件、20 余 JS 组件，更有多个包含不同主题的 Web 组件，可快速构建界面出色、体验优秀的跨屏页面，大幅提升开发效率。
-
-### 本地化支持
-
-相比国外框架，Amaze UI 关注中文排版，根据用户代理调整字体，实现更好的中文排版效果；兼顾国内主流浏览器及 App 内置浏览器兼容支持。
-
-### 轻量级，高性能
-
-Amaze UI 面向 HTML5 开发，使用 CSS3 来做动画交互，平滑、高效，更适合移动设备，让 Web 应用更快速载入。
-
-## 下载及使用
-
-用户可以从 [Amaze UI 官网](http://amazeui.org/getting-started) 下载打包好的模板。
-
-所有文档存放在 `docs/` 目录下，为方便查看演示效果，建议通过 [Amaze UI 官网](http://amazeui.org/)查看文档。
+Amaze UI believes in Mobile First. Beginning with mobile phone screens, Amaze UI is extending the adaption to larger screens such as tablet and PC.
 
 
-## 开发及构建
+### Web Components
 
-用户可以在 Amaze UI 的基础上进行二次开发。
+Amaze UI contains almost 20 CSS components, 10 JS components and 17 other web components which include 60 different themes. All these components are designed to help you develop more efficiently and create responsive pages with awesome user interface and excellent user experience.
 
-### 目录结构
+
+### Localization
+
+Compared with existing front-end frameworks, Amaze UI focuses on optimizing page layout in Chinese by adjusting font to different operating systems automatically. Amaze UI provides better compatibility for currently popular browsers and browsers built in Apps, saving you a lot of time for compatibility debugging.
+
+
+### Light yet Powerful
+
+Amaze UI puts a lot of efforts on performance. Using CSS 3 for animation makes it more interactive, smooth, efficient and suitable for mobile devices, and allows your web app to load fast.
+
+
+## Download
+
+Users can download packed templates from the Amaze UI official site.
+
+All documents are saved in the directory of `docs/`. To view the demo more conveniently, we suggest you check the documents by visiting [the official website](http://amazeui.org/).
+
+
+## Develop
+
+Developers can build extensions on top of Amaze UI.
+
+### Project Structure
 
 ```
 amazeui
@@ -51,48 +47,69 @@ amazeui
 |-- LICENSE
 |-- README.md
 |-- package.json
-|-- dist        # 构建目录
-|-- docs        # 文档
-|-- fonts       # Icon font，目前使用了 http://staticfile.org/
-|-- gulpfile.js # 构建配置文件
-|-- js          # JS 文件
-|-- less        # LESS 文件
-|-- tools       # 相关工具
-|-- vendor
-`-- widget      # Web 组件
+|-- dist        # Contains all compiled and minified CSS and JavaScript files
+|-- docs        # Contains all documentation
+|-- fonts       # Icon font, using http://staticfile.org/
+|-- gulpfile.js # Gulp config
+|-- js          # JavaScript scource
+|-- less        # LESS scource
+|-- tools       # Related tools
+|-- vendor      # Contains external libraries, like Zepto and others that are used by Amaze UI
+|   |-- amazeui.partials.js
+|   |-- handlebars
+|   |-- json.format.js
+|   |-- seajs
+|   `-- zepto
+`-- widget      # Web components
 ```
 
-### 构建工具
+### Building
 
-Amaze UI 使用 [gulp.js](http://gulpjs.com/) 构建项目。
+Amaze UI use [gulp.js](http://gulpjs.com/) to build files。
 
-首先全局安装 gulp：
+The following shows the steps:
 
 ```
 npm install -g gulp
-```
 
-克隆项目文件:
-
-```
 git clone https://github.com/allmobilize/amazeui.git
-```
 
-然后进入目录安装依赖：
-
-```
 npm install
-```
 
-接下来，执行 `gulp`：
-
-```
 gulp
 ```
 
-## [Bug 反馈及需求提交](CONTRIBUTING.md)
+## Bug feedback & Requests
 
-## 参考、使用的项目
+### Bug feedback
+
+You are welcome to [submit bug report](https://github.com/allmobilize/amazeui/issues) to the Amaze UI team.
+
+To explain your problems clearly, we suggest that you provide a demonstration when you give us feedback.
+
+The following links are pages we have built with online debugging tools, using Amaze UI layouts and scripts. You can fork and send a bug report, linking to example pages.
+
+- [Debug Amaze UI 1.0 in JSBin](http://jsbin.com/qasoxibuje/1/edit?html,output)
+
+### Submit Request
+
+User can submit your requests through Issue system or leave us message on our official website. Any request that match our product concepts will be considered.
+
+
+## Code Contribution
+
+You are welcome to join our debugging team! You are also very welcome to share the Web components you explored by “Fork” this item and submit request afterwards.
+
+
+__Development Document__
+
+All the development documents are saved in the directory of `docs/rules`. You can also check those documents on our [official website](http://amazeui.org/).
+
+- [Amaze UI HTML/CSS Specifications](http://amazeui.org/getting-started/html-css)
+- [Amaze UI JavaScript Specifications](http://amazeui.org/getting-started/javascript)
+- [Amaze UI Web Components Specifications](http://amazeui.org/getting-started/widget)
+
+## Referenced & Used Open-source Projects
 
 * [Zepto.js](https://github.com/madrobby/zepto) ([MIT
 License](https://github.com/madrobby/zepto/blob/master/MIT-LICENSE))
@@ -126,7 +143,7 @@ License](https://github.com/sindresorhus/screenfull.js/blob/gh-pages/license))
 * [bootstrap-datepicker.js](http://www.eyecon.ro/bootstrap-datepicker/) ([Apache License 2.0](http://www.eyecon.ro/bootstrap-datepicker/js/bootstrap-datepicker.js))
 * [iScroll](http://iscrolljs.com/) ([MIT License](http://iscrolljs.com/#license))
 
-可能会有部分项目遗漏，我们会不断整理更新。
+There might be some missing and we will keep updating.
 
 ### Developed with Open Source Licensed [WebStorm](http://www.jetbrains.com/webstorm/)
 
